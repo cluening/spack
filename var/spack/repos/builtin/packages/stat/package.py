@@ -60,6 +60,7 @@ class Stat(AutotoolsPackage):
             "--with-graphlib=%s"    % spec['graphlib'].prefix,
             "--with-stackwalker=%s" % spec['dyninst'].prefix,
             "--with-python=%s"      % spec['python'].command.path,
+            "--with-boost=%s"       % spec['boost'].prefix,
         ]
         if '+fgfs' in spec:
             args.append('--with-fgfs=%s'
